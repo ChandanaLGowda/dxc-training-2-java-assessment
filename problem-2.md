@@ -4,6 +4,23 @@ Write a class `Janitor` to accompany the other law firm classes. Janitors work t
 
 ```java
 // A class to represent employees in general.
+public class Janitor extends Employee{
+        piblic int getHours(){
+            return 2 super.getHours();
+        }
+        public double getSalary(){
+            return super.getSalary() - 10000;
+        
+        }
+        public int getVacationDays(){
+            return super.getVactionDats() / 2;
+        }
+        public void clean(){
+            System.out.println("workin' for the man.");
+        }
+    }
+
+
     public class Employee {
 
         private int baseHours = 40;
@@ -41,4 +58,6 @@ Write a class `Janitor` to accompany the other law firm classes. Janitors work t
             baseVacationForm = form;
         }
     }
+    
+
 ```
